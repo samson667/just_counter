@@ -4,22 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter</title>
+    <title>Radhe Radhe Jaap Counter</title>
+    <!-- Google Fonts for Modern Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="counter.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="app-container">
         <div class="phone_screen">
-            <div class="current-date"></div>
-            <div class="big_counter">0</div>
-            <div class="today_counter">Today 0</div>
-            <div class="howmuch_counter">108 X 0 </div>
-            <div class="Liftime_counter">Lifetime 0</div>
-            <div class="howmuch_Liftime">108 X </div>
+            <!-- App Header -->
+            <div class="app-header">
+                <h2>radhe radhe</h2>
+                <div class="current-date"></div>
+            </div>
+
+            <!-- Main Counter Section -->
+            <div class="counter-display-card">
+                <div class="big_counter">0</div>
+                <div class="counter-label">Current Jaap</div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="today_counter">Today 0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="howmuch_counter">108 X 0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="Liftime_counter">Lifetime 0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="howmuch_Liftime">108 X 0</span>
+                </div>
+            </div>
+
+            <!-- Control Buttons -->
             <div class="btn_container">
-                <div class="del_btn"></div>
-                <div class="add_btn"></div>
+                <button class="del_btn" title="Undo / Minus">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </button>
+                <button class="add_btn" title="Count">
+                    <span class="btn-text">जप करें</span>
+                    <i class="fa-solid fa-fingerprint"></i>
+                </button>
             </div>
         </div>
     </div>
